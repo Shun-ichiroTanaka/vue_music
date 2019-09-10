@@ -33,31 +33,78 @@ new Vue({
           url: "https://www.youtube.com/watch?v=SX_ViT4Ra7k",
           favorited: false
         },
-        // {
-        //   name: "????????",
-        //   artist: "????",
-        //   cover: "./img/4.jpg",
-        //   source: "./mp3/4.mp3",
-        //   url: "https://www.youtube.com/watch?v=XSkpuDseenY",
-        //   favorited: false
-        // },
-        // {
-        //   name: "Loser",
-        //   artist: "????",
-        //   cover: "./img/5.jpg",
-        //   source: "./mp3/5.mp3",
-        //   url: "https://www.youtube.com/watch?v=Dx_fKPBPYUI",
-        //   favorited: true
-        // },
-        // {
-        //   name: "orion",
-        //   artist: "????",
-        //   cover: "./img/6.jpg",
-        //   source: "./mp3/6.mp3",
-        //   url: "https://www.youtube.com/watch?v=lzAyrgSqeeE",
-        //   favorited: false
-        // },
-
+        {
+          name: "????????",
+          artist: "????",
+          cover: "./img/4.jpg",
+          source: "./mp3/4.mp3",
+          url: "https://www.youtube.com/watch?v=XSkpuDseenY",
+          favorited: false
+        },
+        {
+          name: "Loser",
+          artist: "????",
+          cover: "./img/5.jpg",
+          source: "./mp3/5.mp3",
+          url: "https://www.youtube.com/watch?v=Dx_fKPBPYUI",
+          favorited: true
+        },
+        {
+          name: "orion",
+          artist: "????",
+          cover: "./img/6.jpg",
+          source: "./mp3/6.mp3",
+          url: "https://www.youtube.com/watch?v=lzAyrgSqeeE",
+          favorited: false
+        },
+        {
+          name: "Flamingo",
+          artist: "????",
+          cover: "./img/7.jpg",
+          source: "./mp3/7.mp3",
+          url: "https://www.youtube.com/watch?v=Uh6dkL1M9DM",
+          favorited: false
+        },
+        {
+          name: "??????",
+          artist: "DAOKO×????",
+          cover: "./img/8.jpg",
+          source: "./mp3/8.mp3",
+          url: "https://www.youtube.com/watch?v=-tKVN2mAKRI",
+          favorited: false
+        },
+        {
+          name: "??????",
+          artist: "????",
+          cover: "./img/9.jpg",
+          source: "./mp3/9.mp3",
+          url: "https://www.youtube.com/watch?v=9aJVr5tTTWk",
+          favorited: false
+        },
+        {
+          name: "??????",
+          artist: "????",
+          cover: "./img/10.jpg",
+          source: "./mp3/10.mp3",
+          url: "https://www.youtube.com/watch?v=Qa9PkDZkyHg",
+          favorited: false
+        },
+        {
+          name: "????",
+          artist: "????",
+          cover: "./img/11.jpg",
+          source: "./mp3/11.mp3",
+          url: "https://www.youtube.com/watch?v=s582L3gujnw",
+          favorited: false
+        },
+        {
+          name: "???????",
+          artist: "????",
+          cover: "./img/12.jpg",
+          source: "./mp3/12.mp3",
+          url: "https://www.youtube.com/watch?v=-EKxzId_Sj4",
+          favorited: false
+        }
       ],
       currentTrack: null,
       currentTrackIndex: 0,
