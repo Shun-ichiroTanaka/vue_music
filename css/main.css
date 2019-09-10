@@ -1,6 +1,6 @@
 body {
-  background: #dfe7ef;
   font-family: "Bitter", serif;
+  background: #dfe7ef;
 }
 
 * {
@@ -11,49 +11,50 @@ body {
   display: inline-block;
   width: 1em;
   height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
+
   fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0;
 }
 
 .wrapper {
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
   min-height: 100vh;
   background-size: cover;
 }
 @media screen and (max-width: 700px), (max-height: 500px) {
   .wrapper {
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 
 .player {
-  background: #eef3f7;
   width: 410px;
   min-height: 480px;
-  box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
-  border-radius: 15px;
   padding: 30px;
+  background: #eef3f7;
+  box-shadow: 0 15px 35px -5px rgba(50, 88, 130, .32);
+  border-radius: 15px;
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
   .player {
     width: 95%;
-    padding: 20px;
-    margin-top: 75px;
-    min-height: initial;
-    padding-bottom: 30px;
     max-width: 400px;
+    min-height: initial;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-top: 75px;
   }
 }
 .player__top {
-  display: flex;
-  align-items: flex-start;
   position: relative;
   z-index: 4;
+  display: flex;
+  align-items: flex-start;
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
   .player__top {
@@ -61,110 +62,111 @@ body {
   }
 }
 .player-cover {
+  position: relative;
+  z-index: 2;
+  z-index: 1;
+  flex-shrink: 0;
   width: 300px;
   height: 300px;
   margin-left: -70px;
-  flex-shrink: 0;
-  position: relative;
-  z-index: 2;
   border-radius: 15px;
-  z-index: 1;
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
   .player-cover {
-    margin-top: -70px;
-    margin-bottom: 25px;
     width: 290px;
     height: 230px;
-    margin-left: auto;
+    margin-top: -70px;
     margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
   }
 }
 .player-cover__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 100%;
   border-radius: 15px;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 .player-cover__item:before {
   content: "";
-  background: inherit;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 10px 40px 0px rgba(76, 70, 124, 0.5);
-  display: block;
-  z-index: 1;
   position: absolute;
   top: 30px;
-  transform: scale(0.9);
-  filter: blur(10px);
-  opacity: 0.9;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  box-shadow: 0 10px 40px 0 rgba(76, 70, 124, .5);
   border-radius: 15px;
+  transform: scale(.9);
+  opacity: .9;
+  filter: blur(10px);
 }
 .player-cover__item:after {
   content: "";
-  background: inherit;
+  position: absolute;
+  z-index: 2;
+  display: block;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 10px 40px 0px rgba(76, 70, 124, 0.5);
-  display: block;
-  z-index: 2;
-  position: absolute;
+  background: inherit;
+  box-shadow: 0 10px 40px 0 rgba(76, 70, 124, .5);
   border-radius: 15px;
 }
 .player-cover__img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  box-shadow: 0 10px 40px 0 rgba(76, 70, 124, .5);
   border-radius: 15px;
-  box-shadow: 0px 10px 40px 0px rgba(76, 70, 124, 0.5);
-  user-select: none;
   pointer-events: none;
+  user-select: none;
+
+  object-fit: cover;
 }
 .player-controls {
-  flex: 1;
-  padding-left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
+  padding-left: 20px;
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
   .player-controls {
     flex-direction: row;
-    padding-left: 0;
-    width: 100%;
     flex: unset;
+    width: 100%;
+    padding-left: 0;
   }
 }
 .player-controls__item {
+  position: relative;
   display: inline-flex;
-  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
   padding: 5px;
   margin-bottom: 10px;
   color: #acb8cc;
+  font-size: 30px;
+  transition: all .3s ease-in-out;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
   .player-controls__item {
-    font-size: 26px;
-    padding: 5px;
-    margin-right: 10px;
-    color: #acb8cc;
-    cursor: pointer;
     width: 40px;
     height: 40px;
+    padding: 5px;
+    margin-right: 10px;
     margin-bottom: 0;
+    color: #acb8cc;
+    font-size: 26px;
+    cursor: pointer;
   }
 }
 .player-controls__item::before {
@@ -172,21 +174,21 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   background: #fff;
-  transform: scale(0.5);
+  box-shadow: 0 5px 10px 0 rgba(76, 70, 124, .2);
+  border-radius: 50%;
+  transform: scale(.5);
+  transition: all .3s ease-in-out;
+  transition: all .4s cubic-bezier(.35, .57, .13, .88);
   opacity: 0;
-  box-shadow: 0px 5px 10px 0px rgba(76, 70, 124, 0.2);
-  transition: all 0.3s ease-in-out;
-  transition: all 0.4s cubic-bezier(0.35, 0.57, 0.13, 0.88);
 }
 @media screen and (min-width: 500px) {
   .player-controls__item:hover {
     color: #532ab9;
   }
   .player-controls__item:hover::before {
-    opacity: 1;
     transform: scale(1.3);
+    opacity: 1;
   }
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
@@ -194,8 +196,8 @@ body {
     color: #532ab9;
   }
   .player-controls__item:active::before {
-    opacity: 1;
     transform: scale(1.3);
+    opacity: 1;
   }
 }
 .player-controls__item .icon {
@@ -203,19 +205,19 @@ body {
   z-index: 2;
 }
 .player-controls__item.-xl {
-  margin-bottom: 0;
-  font-size: 95px;
-  filter: drop-shadow(0 11px 6px rgba(172, 184, 204, 0.45));
-  color: #fff;
+  display: inline-flex;
   width: auto;
   height: auto;
-  display: inline-flex;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 95px;
+  filter: drop-shadow(0 11px 6px rgba(172, 184, 204, .45));
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
   .player-controls__item.-xl {
+    margin-right: 0;
     margin-left: auto;
     font-size: 75px;
-    margin-right: 0;
   }
 }
 .player-controls__item.-xl:before {
@@ -240,43 +242,43 @@ body {
 }
 .progress__top {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .progress__duration {
   color: #71829e;
-  font-weight: 700;
   font-size: 20px;
-  opacity: 0.5;
+  font-weight: 700;
+  opacity: .5;
 }
 .progress__time {
   margin-top: 2px;
   color: #71829e;
-  font-weight: 700;
   font-size: 16px;
-  opacity: 0.7;
+  font-weight: 700;
+  opacity: .7;
 }
 
 .progress__bar {
-  height: 6px;
-  width: 100%;
-  cursor: pointer;
-  background-color: #d0d8e6;
   display: inline-block;
+  width: 100%;
+  height: 6px;
+  background-color: #d0d8e6;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .progress__current {
+  width: 0;
   height: inherit;
-  width: 0%;
   background-color: #a3b3ce;
   border-radius: 10px;
 }
 
 .album-info {
-  color: #71829e;
   flex: 1;
   padding-right: 60px;
+  color: #71829e;
   user-select: none;
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
@@ -285,28 +287,28 @@ body {
   }
 }
 .album-info__name {
+  margin-bottom: 12px;
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 12px;
   line-height: 1.3em;
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
   .album-info__name {
-    font-size: 18px;
     margin-bottom: 9px;
+    font-size: 18px;
   }
 }
 .album-info__track {
-  font-weight: 400;
-  font-size: 20px;
-  opacity: 0.7;
-  line-height: 1.3em;
   min-height: 52px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3em;
+  opacity: .7;
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
   .album-info__track {
-    font-size: 18px;
     min-height: 50px;
+    font-size: 18px;
   }
 }
 
@@ -314,74 +316,74 @@ body {
   position: absolute;
   right: 40px;
   bottom: 50px;
-  text-decoration: none;
   padding: 15px 25px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
-  background: #24292e;
   color: #fff;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 16px;
-  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  background: #24292e;
+  box-shadow: 0 4px 30px -6px rgba(36, 52, 70, .65);
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
 }
 @media screen and (min-width: 500px) {
   .github-btn:hover {
+    box-shadow: 0 17px 20px -6px rgba(36, 52, 70, .36);
     transform: scale(1.1);
-    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
   }
 }
 @media screen and (max-width: 700px) {
   .github-btn {
     position: relative;
-    bottom: auto;
     right: auto;
+    bottom: auto;
     margin-top: 20px;
   }
   .github-btn:active {
+    box-shadow: 0 17px 20px -6px rgba(36, 52, 70, .36);
     transform: scale(1.1);
-    box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
   }
 }
 
 .scale-out-enter-active {
-  transition: all 0.35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 .scale-out-leave-active {
-  transition: all 0.35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 .scale-out-enter {
-  transform: scale(0.55);
-  pointer-events: none;
+  transform: scale(.55);
   opacity: 0;
+  pointer-events: none;
 }
 
 .scale-out-leave-to {
   transform: scale(1.2);
-  pointer-events: none;
   opacity: 0;
+  pointer-events: none;
 }
 
 .scale-in-enter-active {
-  transition: all 0.35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 .scale-in-leave-active {
-  transition: all 0.35s ease-in-out;
+  transition: all .35s ease-in-out;
 }
 
 .scale-in-enter {
   transform: scale(1.2);
-  pointer-events: none;
   opacity: 0;
+  pointer-events: none;
 }
 
 .scale-in-leave-to {
-  transform: scale(0.55);
-  pointer-events: none;
+  transform: scale(.55);
   opacity: 0;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=main.css.map */
