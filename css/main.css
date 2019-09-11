@@ -1,7 +1,8 @@
 @charset "utf-8";
+@import url("css/reset.css");
 
 body {
-  font-family: "Bitter", serif;
+  font-family: "Kosugi Maru", sans-serif;
   background: #dfe7ef;
 }
 
