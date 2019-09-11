@@ -10,16 +10,16 @@ new Vue({
       isTimerPlaying: false,
       tracks: [
         {
-          name: "???????",
-          artist: "????",
+          name: "まちがいさがし",
+          artist: "菅田将暉",
           cover: "./img/1.jpg",
           source: "./mp3/1.mp3",
           url: "https://www.youtube.com/watch?v=7940nuwCEYA",
           favorited: false
         },
         {
-          name: "????",
-          artist: "????�????",
+          name: "灰色と青",
+          artist: "米津玄師×菅田将暉",
           cover: "./img/2.jpg",
           source: "./mp3/2.mp3",
           url: "https://www.youtube.com/watch?v=gJX2iy6nhHc",
@@ -27,23 +27,23 @@ new Vue({
         },
         {
           name: "Lemon",
-          artist: "????",
+          artist: "米津玄師",
           cover: "./img/3.jpg",
           source: "./mp3/3.mp3",
           url: "https://www.youtube.com/watch?v=SX_ViT4Ra7k",
           favorited: false
         },
-        {
-          name: "????????",
-          artist: "????",
-          cover: "./img/4.jpg",
-          source: "./mp3/4.mp3",
-          url: "https://www.youtube.com/watch?v=XSkpuDseenY",
-          favorited: false
-        },
+        // {
+        //   name: "さよならエナジー",
+        //   artist: "菅田将暉",
+        //   cover: "./img/4.jpg",
+        //   source: "./mp3/4.mp3",
+        //   url: "https://www.youtube.com/watch?v=XSkpuDseenY",
+        //   favorited: false
+        // },
         {
           name: "Loser",
-          artist: "????",
+          artist: "米津玄師",
           cover: "./img/5.jpg",
           source: "./mp3/5.mp3",
           url: "https://www.youtube.com/watch?v=Dx_fKPBPYUI",
@@ -51,7 +51,7 @@ new Vue({
         },
         {
           name: "orion",
-          artist: "????",
+          artist: "米津玄師",
           cover: "./img/6.jpg",
           source: "./mp3/6.mp3",
           url: "https://www.youtube.com/watch?v=lzAyrgSqeeE",
@@ -59,47 +59,47 @@ new Vue({
         },
         {
           name: "Flamingo",
-          artist: "????",
+          artist: "米津玄師",
           cover: "./img/7.jpg",
           source: "./mp3/7.mp3",
           url: "https://www.youtube.com/watch?v=Uh6dkL1M9DM",
           favorited: false
         },
         {
-          name: "??????",
-          artist: "DAOKO�????",
+          name: "打ち上げ花火",
+          artist: "DAOKO×米津玄師",
           cover: "./img/8.jpg",
           source: "./mp3/8.mp3",
           url: "https://www.youtube.com/watch?v=-tKVN2mAKRI",
           favorited: false
         },
+        // {
+        //   name: "ピースサイン",
+        //   artist: "米津玄師",
+        //   cover: "./img/9.jpg",
+        //   source: "./mp3/9.mp3",
+        //   url: "https://www.youtube.com/watch?v=9aJVr5tTTWk",
+        //   favorited: false
+        // },
+        // {
+        //   name: "メトロノーム",
+        //   artist: "米津玄師",
+        //   cover: "./img/10.jpg",
+        //   source: "./mp3/10.mp3",
+        //   url: "https://www.youtube.com/watch?v=Qa9PkDZkyHg",
+        //   favorited: false
+        // },
         {
-          name: "??????",
-          artist: "????",
-          cover: "./img/9.jpg",
-          source: "./mp3/9.mp3",
-          url: "https://www.youtube.com/watch?v=9aJVr5tTTWk",
-          favorited: false
-        },
-        {
-          name: "??????",
-          artist: "????",
-          cover: "./img/10.jpg",
-          source: "./mp3/10.mp3",
-          url: "https://www.youtube.com/watch?v=Qa9PkDZkyHg",
-          favorited: false
-        },
-        {
-          name: "????",
-          artist: "????",
+          name: "パプリカ",
+          artist: "米津玄師",
           cover: "./img/11.jpg",
           source: "./mp3/11.mp3",
           url: "https://www.youtube.com/watch?v=s582L3gujnw",
           favorited: false
         },
         {
-          name: "???????",
-          artist: "????",
+          name: "アイネクライネ",
+          artist: "米津玄師",
           cover: "./img/12.jpg",
           source: "./mp3/12.mp3",
           url: "https://www.youtube.com/watch?v=-EKxzId_Sj4",
