@@ -389,4 +389,24 @@ body {
   pointer-events: none;
 }
 
+.scale-shuffle-enter-active {
+  transition: all .35s ease-in-out;
+}
+
+.scale-shuffle-leave-active {
+  transition: all .35s ease-in-out;
+}
+
+.scale-shuffle-enter {
+  transform: scale(1.2);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scale-shuffle-leave-to {
+  transform: scale(.55);
+  opacity: 0;
+  pointer-events: none;
+}
+
 /*# sourceMappingURL=main.css.map */
