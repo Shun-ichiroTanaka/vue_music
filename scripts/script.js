@@ -187,13 +187,13 @@ new Vue({
       this.currentTrack = this.tracks[this.currentTrackIndex];
       this.resetPlayer();
     },
-    shuffleTrack() {
-      this.transitionName = "scale-shuffle";
-      this.isShowCover = false;
-      this.tracks = _.shuffle(this.tracks)
-      this.currentTrack = this.tracks[this.currentTrackIndex];
-      this.resetPlayer();
-    },
+    // shuffleTrack() {
+    //   this.transitionName = "scale-shuffle";
+    //   this.isShowCover = false;
+    //   this.tracks = _.shuffle(this.tracks)
+    //   this.currentTrack = this.tracks[this.currentTrackIndex];
+    //   this.resetPlayer();
+    // },
     resetPlayer() {
       this.barWidth = 0;
       this.circleLeft = 0;
