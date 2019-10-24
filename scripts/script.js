@@ -14,7 +14,7 @@ new Vue({
           artist: "Official髭男dism",
           cover: "./img/syukumei.jpg",
           source: "./mp3/syukumei.mp3",
-          url: "https://www.youtube.com/watch?v=ony539T074w",
+          url: "https://youtu.be/-kgOFJG881I",
           favorited: false
         },
         {
@@ -22,7 +22,7 @@ new Vue({
           artist: "Official髭男dism",
           cover: "./img/pritender.jpg",
           source: "./mp3/pritender.mp3",
-          url: "https://www.youtube.com/watch?v=ony539T074w",
+          url: "https://youtu.be/TQ8WlA2GXbk",
           favorited: false
         },
         {
@@ -30,7 +30,7 @@ new Vue({
           artist: "米津玄師",
           cover: "./img/umatosika.jpg",
           source: "./mp3/umatosika.mp3",
-          url: "https://www.youtube.com/watch?v=ony539T074w",
+          url: "https://youtu.be/ptnYBctoexk",
           favorited: false
         },
         {
@@ -38,7 +38,7 @@ new Vue({
           artist: "Official髭男dism",
           cover: "./img/nodoubt.jpg",
           source: "./mp3/nodoubt.mp3",
-          url: "https://www.youtube.com/watch?v=ony539T074w",
+          url: "https://youtu.be/EHw005ZqCXk",
           favorited: false
         },
         {
