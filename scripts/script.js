@@ -10,6 +10,46 @@ new Vue({
       isTimerPlaying: false,
       tracks: [
         {
+          name: "宿命",
+          artist: "Official髭男dism",
+          cover: "./img/syukumei.jpg",
+          source: "./mp3/syukumei.mp3",
+          url: "https://www.youtube.com/watch?v=ony539T074w",
+          favorited: false
+        },
+        {
+          name: "Pritender",
+          artist: "Official髭男dism",
+          cover: "./img/pritender.jpg",
+          source: "./mp3/pritender.mp3",
+          url: "https://www.youtube.com/watch?v=ony539T074w",
+          favorited: false
+        },
+        {
+          name: "馬と鹿",
+          artist: "米津玄師",
+          cover: "./img/umatosika.jpg",
+          source: "./mp3/umatosika.mp3",
+          url: "https://www.youtube.com/watch?v=ony539T074w",
+          favorited: false
+        },
+        {
+          name: "ノーダウト",
+          artist: "Official髭男dism",
+          cover: "./img/nodoubt.jpg",
+          source: "./mp3/nodoubt.mp3",
+          url: "https://www.youtube.com/watch?v=ony539T074w",
+          favorited: false
+        },
+        {
+          name: "白日",
+          artist: "King Gnu",
+          cover: "./img/hakuzitu.jpg",
+          source: "./mp3/hakuzitu.mp3",
+          url: "https://www.youtube.com/watch?v=ony539T074w",
+          favorited: false
+        },
+        {
           name: "まちがいさがし",
           artist: "菅田将暉",
           cover: "./img/1.jpg",
@@ -104,7 +144,7 @@ new Vue({
           source: "./mp3/12.mp3",
           url: "https://www.youtube.com/watch?v=-EKxzId_Sj4",
           favorited: false
-        }
+        },
       ],
       currentTrack: null,
       currentTrackIndex: 0,
